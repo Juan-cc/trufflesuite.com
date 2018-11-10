@@ -36,12 +36,12 @@ For more details on the `ethpm.json` file, see the [package configuration](/docs
 
 Installed packages will be placed in the `installed_contracts` directory within your project folder. If no `installed_contracts` directory exists it'll be created for you. You should treat this folder like you treat the `node_modules` folder with NPM -- that is, you shouldn't edit the contents inside unless you know what you're doing. :)
 
-Installed packages can be consumed within your tests, migrations and solidity contract files by `import`'ing or `require`'ing that package and contract by name. For example, the following Solidity contract would import the `owned.sol` file from the `owned` package:
+Installed packages can be consumed within your tests, migrations and solidity contract files by `import`'ing or `require`'ing that package and contract by name. For example, the following Solidity contract would import the `owned.sol` file from the `own3d` package:
 
 ```javascript
 pragma solidity ^0.4.2;
 
-import "owned/owned.sol";
+import "own3d/owned.sol";
 
 contract MyContract is owned {
   // ...
@@ -126,7 +126,7 @@ File: `ethpm.json`
     "addition"
   ],
   "dependencies": {
-    "owned": "^0.0.1"
+    "own3d": "^1.0.0"
   },
   "license": "MIT"
 }
